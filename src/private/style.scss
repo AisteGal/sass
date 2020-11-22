@@ -1,0 +1,100 @@
+$pilka: grey;
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  margin: 0;
+  background: black;
+  text-align: center;
+  &-primary {
+    margin:auto;
+    padding: 15px;
+    &__item {
+      display: inline;
+      padding: 5px;
+      color: $pilka;
+      margin: 10px;
+    }
+  }
+}
+
+.topic{
+  background: gray;
+  &__title{
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  &__paragraph{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+  &__link{
+    color: #212121;
+    padding:10px 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin:0 auto;
+    max-width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  &__link:hover {opacity: 1}
+}
+.branding {
+  background-image: url("../apple.jpg");
+  width: 100%;
+  height: auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title{
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+  }
+  &__paragraph {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+  }
+  &__link{
+    display:inline-block;
+    color: cornflowerblue;
+    padding:10px 20px;
+    text-decoration: none;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 2px;
+    margin: 60px 0;
+    border-radius: 5px;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+/*kazkas*/

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+<script>
+   // console.log("labas");
+
+    function greitis(kelias, laikas){
+        console.log (kelias*laikas);
+    }
+    greitis(10,2);
+
+    function vidutinisGreitis(etapas1, etapas2, etapas3, etapas4) {
+        var sum = 0;
+        var etapuMas = [etapas1, etapas2, etapas3, etapas4];
+
+        for(var i=0; i<etapuMas.length; i++){
+            sum = etapuMas[i] + sum;
+        }
+        console.log(sum/4);
+    }
+    vidutinisGreitis(2,5,7,15);
+
+
+    var colors = ["red", "blue", "yellow", "purple"];
+
+    colors.forEach(function(hey){
+        console.log(hey);
+   });
+// namų darbai
+
+    // 1.
+
+    function reverseString(word) {
+        var splitString = word.split("");
+        var reverseArray = splitString.reverse ();
+        var joinArray = reverseArray.join("");
+
+        console.log(joinArray);
+    };
+
+    reverseString("goodevening");
+
+    //2.
+
+    function palindrome(string) {
+        var splitString = string.split("");
+        var reverseArray = splitString.reverse ();
+        var joinArray = reverseArray.join("");
+
+        if (string === joinArray){
+            console.log(true);
+        }
+
+        else {
+            console.log(false);
+        }
+    };
+
+    palindrome("abba");
+
+</script>
+</body>
+</html>
